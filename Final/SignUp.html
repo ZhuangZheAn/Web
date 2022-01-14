@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">註冊用戶</div>
+                            <form method="post" class="card-body">
+                            <div class="form-group">
+                                <label class="label_input">E-mail</label>
+                                <input type="text" id="signUpID" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="label_input">Password</label>
+                                <input type="password" id="signUpPWD" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="label_input">Confirm Password</label>
+                                <input type="password" id="ChecksignUpPWD" class="form-control" required>
+                            </div>
+                            <div id="login_control">
+                                <button type="button" id="SignUpBtn" class="btn btn-primary">註冊</button>
+                                <a type="button" id="back" class="btn btn-secondary" href="SignIn.html">返回登入</a>
+                            </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--  Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="./SignUp.js"></script>
+  </body>
+</html>
+

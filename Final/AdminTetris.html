@@ -1,0 +1,37 @@
+<html lang = "en" dir = "ltr">
+	<head>
+		<meta charset="utf-8">
+    	<Title>Tetris</Title>
+	</head>
+	<body>
+		<script src = "Tetris.js"></script>
+		<style media="screen">
+			body 
+			{
+				background-color: gray;
+			}
+			#map
+			{
+				display:block;
+				margin: 10px auto 0 auto;
+				border: 1px solid white;
+			}
+			#score
+			{
+				margin: 20px auto;
+				text-align: center;
+				font: 40px Comic The New Roman;
+				color:  black;
+			}
+
+		</style>
+    	<div>
+        	<div id="score">0</div>
+			<canvas id="map" width="300" height="600"></canvas>
+    	</div>
+		<div style="text-align:center;">
+			<input type=button class="btn btn-dark" value=reset onclick=history.go(0)>
+			<a type="button" id="MainBtn" class="btn btn-secondary" href="AdminMain.html">返回主頁</a>
+    	</div>
+	</body>
+</html>
