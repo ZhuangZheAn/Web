@@ -26,7 +26,7 @@ SignOutBtn.addEventListener("click",function(){
         .signOut()
         .then(() => {
             alert("已登出!");
-            window.location.href="../SignIn.html";
+            window.location.href="../index.html";
         }, function(error) {
   	        console.log("登出錯誤!");
 	})

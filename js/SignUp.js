@@ -21,7 +21,7 @@ SignUpBtn.addEventListener("click", function (e) {
         .createUserWithEmailAndPassword(signUpID.value, signUpPWD.value)
         .then(() => {
             alert("註冊成功!");
-            window.location.href="../SignIn.html";
+            window.location.href="../index.html";
         })
         .catch((error) => {
             alert(error.message);
