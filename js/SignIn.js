@@ -22,11 +22,11 @@ SignInBtn.addEventListener("click",function(){
     .then(() => {
         if (signInID.value == adminID){
             alert("已登入管理員模式!");
-            window.location.href="AdminMain.html";
+            window.location.href="./html/AdminMain.html";
             
         }
         else{
-            window.location.href="Main.html";
+            window.location.href="./html/Main.html";
         }
     })
     .catch((error) => {
