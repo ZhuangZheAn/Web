@@ -14,14 +14,7 @@ var SignOutBtn = document.getElementById("SignOutBtn");
 //俄羅斯方塊
 TetrisBtn.addEventListener("click",function(){
     alert("準備好了嗎?");
-    window.location.href="Tetris.html";
-}, function(error) {
-  	console.log("錯誤!");
-})
-
-//評論
-CommentBtn.addEventListener("click",function(){
-    window.location.href="Comment.html";
+    window.location.href="AdminTetris.html";
 }, function(error) {
   	console.log("錯誤!");
 })
@@ -33,9 +26,8 @@ SignOutBtn.addEventListener("click",function(){
         .signOut()
         .then(() => {
             alert("已登出!");
-            window.location.href="SignIn.html";
+            window.location.href="../SignIn.html";
         }, function(error) {
   	        console.log("登出錯誤!");
 	})
 },false);
-
